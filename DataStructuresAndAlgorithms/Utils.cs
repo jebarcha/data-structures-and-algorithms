@@ -16,5 +16,12 @@ namespace DataStructuresAndAlgorithms.DataUtils
         {
             Console.WriteLine(val);
         }
+        public static void PrintString(IEnumerable<int> arr)
+        {
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }
