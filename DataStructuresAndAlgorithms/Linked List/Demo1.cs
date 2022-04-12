@@ -16,6 +16,10 @@ namespace DataStructuresAndAlgorithms.Linked_List
             list1.AddLast(20);
             list1.AddLast(30);
             list1.AddFirst(5);
+            list1.RemoveFirst();
+            list1.RemoveLast();
+            //list1.AddBefore(1, 40);
+            //list1.AddAfter(2, 50);
             
             Console.WriteLine(DataUtils.Utils.Array2String(list1));
             Console.WriteLine(DataUtils.Utils.Array2String(list1.ToArray()));
