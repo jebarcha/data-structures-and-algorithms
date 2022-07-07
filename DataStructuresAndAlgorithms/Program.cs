@@ -95,16 +95,19 @@ void MyLinkedList()
     //Console.WriteLine(Utils.Array2String(list.ToArray()));
 
 
-    list.AddLast(40);
-    list.AddLast(50);
+    //list.AddLast(40);
+    //list.AddLast(50);
     //Console.WriteLine(list.GetKthFromTheEnd(1));
     //Console.WriteLine(list.GetKthFromTheEnd(2));
     //Console.WriteLine(list.GetKthFromTheEnd(3));
     //Console.WriteLine(list.GetKthFromTheEnd(0));
     //Console.WriteLine(list.GetKthFromTheEnd(6));
 
-    list.PrintMiddle();
-    list.AddLast(60);
-    list.PrintMiddle();
+    //list.PrintMiddle();
+    //list.AddLast(60);
+    //list.PrintMiddle();
+
+    var listWithLoop = list.CreateWithLoop();
+    Console.WriteLine(listWithLoop.HasLoop());
 
 }

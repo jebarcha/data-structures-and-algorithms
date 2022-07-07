@@ -213,9 +213,41 @@ namespace DataStructuresAndAlgorithms.Linked_List.DemoLL
         }
         public bool HasLoop()
         {
+            if (IsEmpty()) throw new InvalidOperationException();
 
+            var slow = _first;
+            var fast = _first;
+            while (fast != null && fast._next != _last)
+            {
+                slow = slow._next;
+                fast = fast._next._next;
 
-            return true;
+                if (slow == fast)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public LinkedList CreateWithLoop()
+        {
+            var list = new LinkedList();
+            list.AddLast(10);
+            list.AddLast(20);
+            list.AddLast(30);
+
+            // Get a reference to 30
+            var node = list._last;
+
+            list.AddLast(40);
+            list.AddLast(50);
+
+            // Create the loop
+            list._last._next = node;
+
+            return list;
         }
     }
 }
