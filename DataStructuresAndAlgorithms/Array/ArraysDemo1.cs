@@ -10,6 +10,7 @@ namespace DataStructuresAndAlgorithms
     {
         public static void ArraysExample()
         {
+            //int[] numbers = new int[3];
             int[] numbers = { 10, 20, 30};
             Console.WriteLine(DataUtils.Utils.Array2String(numbers));
             Console.WriteLine($"Size of array: {numbers.Length}");

@@ -99,12 +99,7 @@ namespace DataStructuresAndAlgorithms.MyArray
         }
         public void InsertAt(int index, int item)
         {
-            if (index >= _count)
-            {
-                throw new ArgumentOutOfRangeException("index");
-            }
-
-            if (index >_count)
+            if (_items.Length == _count)
             {
                 IncreaseArrayLength(index);
             }
@@ -112,7 +107,8 @@ namespace DataStructuresAndAlgorithms.MyArray
             if (_items[index] == 0)
             {
                 _items[index] = item;
-            } 
+            }
+            _count++;
             //else
             //{
             //    // 10, 20, 30, 40

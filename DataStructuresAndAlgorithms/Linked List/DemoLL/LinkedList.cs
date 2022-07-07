@@ -165,7 +165,7 @@ namespace DataStructuresAndAlgorithms.Linked_List.DemoLL
             _last._next = null;
             _first = previous;
         }
-        public int GetKthFromTheend(int k)
+        public int GetKthFromTheEnd(int k)
         {
             // Find the Kth node from the end
             // of a linked list in one pass.
@@ -173,7 +173,9 @@ namespace DataStructuresAndAlgorithms.Linked_List.DemoLL
             // k = 1 (50)
             // k = 2 (40)
             // k = 3 (30)
+
             if (IsEmpty()) throw new InvalidOperationException();
+
             var a = _first;
             var b = _first;
             for (int i = 0; i < k - 1; i++)
@@ -187,6 +189,33 @@ namespace DataStructuresAndAlgorithms.Linked_List.DemoLL
                 b = b._next;
             }
             return a._value;
+        }
+        public void PrintMiddle()
+        {
+            if (IsEmpty()) throw new InvalidOperationException();
+
+            var a = _first;
+            var b = _first;
+            while (b != _last && b._next != _last)
+            {
+                b = b._next._next;
+                a = a._next;
+            }
+
+            if (b == _last)
+            {
+                Console.WriteLine(a._value);
+            }
+            else
+            {
+                Console.WriteLine($"{a._value}, {a._next._value}");
+            }
+        }
+        public bool HasLoop()
+        {
+
+
+            return true;
         }
     }
 }

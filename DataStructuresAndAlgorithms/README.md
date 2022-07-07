@@ -41,6 +41,9 @@ Delete
   End			O(n)	O(n)
 
 # Types of Linked List
-* SINGLY
-* DOUBLY
+* SINGLY  [] -> [] -> []    Delete from the End O(n)
+* DOUBLY  [] <-> [] <-> []  Delete from the End O(1)
+
+Can be Circular, means that last node reference first node
+
 

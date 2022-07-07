@@ -19,8 +19,11 @@ void ArrayDemo()
         numbers.Insert(20);
         numbers.Insert(60);
         numbers.Insert(40);
-        //numbers.RemoveAt(4);
-        //Console.WriteLine(numbers.IndexOf(30));
+        //numbers.Print();
+
+        //Console.WriteLine("-----"); // Environment.NewLine);
+        //numbers.RemoveAt(-1);
+        //Console.WriteLine(numbers.IndexOf(20));
         //numbers.Print();
         //Console.WriteLine(numbers.LargestNumber());
 
@@ -31,7 +34,7 @@ void ArrayDemo()
         //var intersect = numbers.CommonItems(newArr);
         //Utils.PrintString(intersect);
 
-        numbers.InsertAt(5, 100);
+        numbers.InsertAt(4, 100);
         Console.WriteLine(numbers.IndexOf(100));
     }
     catch (Exception ex)
@@ -62,32 +65,46 @@ void MyLinkedList()
     var list = new LinkedList();
     //Console.WriteLine(list.Size());
     list.AddLast(10);
-    //Console.WriteLine(list.Size());
     list.AddLast(20);
     list.AddLast(30);
-    //var array = list.ToArray();
-    //Console.WriteLine(Utils.Array2String(array));
     //Console.WriteLine(list.Size());
-    //list.RemoveLast();
-    //Console.WriteLine(list.Size());
-    //list.RemoveFirst();
 
     //list.AddFirst(5);
+    //list.AddFirst(15);
     //Console.WriteLine(list.Size());
+
     //Console.WriteLine(list.IndexOf(10));
     //Console.WriteLine(list.IndexOf(30));
     //Console.WriteLine(list.IndexOf(400));
+
     //Console.WriteLine(list.Contains(400));
     //Console.WriteLine(list.Contains(10));
+
+    //Console.WriteLine(list.Size());
+    //list.RemoveFirst();
+    //Console.WriteLine(list.Size());
+
+    //Console.WriteLine(list.Size());
+    //list.RemoveLast();
+    //Console.WriteLine(list.Size());
+
+    //convert liked list to an array:
+    //Console.WriteLine(Utils.Array2String(list.ToArray()));
 
     //list.Reverse();
     //Console.WriteLine(Utils.Array2String(list.ToArray()));
 
+
     list.AddLast(40);
     list.AddLast(50);
-    Console.WriteLine(list.GetKthFromTheend(1));
-    Console.WriteLine(list.GetKthFromTheend(2));
-    Console.WriteLine(list.GetKthFromTheend(3));
-    Console.WriteLine(list.GetKthFromTheend(0));
-    Console.WriteLine(list.GetKthFromTheend(6));
+    //Console.WriteLine(list.GetKthFromTheEnd(1));
+    //Console.WriteLine(list.GetKthFromTheEnd(2));
+    //Console.WriteLine(list.GetKthFromTheEnd(3));
+    //Console.WriteLine(list.GetKthFromTheEnd(0));
+    //Console.WriteLine(list.GetKthFromTheEnd(6));
+
+    list.PrintMiddle();
+    list.AddLast(60);
+    list.PrintMiddle();
+
 }
