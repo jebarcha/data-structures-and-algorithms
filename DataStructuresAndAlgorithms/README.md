@@ -47,3 +47,26 @@ Delete
 Can be Circular, means that last node reference first node
 
 
+####Stacks
+We use Stacks to:
+* Implement undo features in our applications
+* Build compilers (eg syntax checking, parsing)
+* Evaluate expresions (eg 1 + 2 * 3)
+* Build navigations (eg forward/back)
+
+The best way to understand **stacks** is to think of a stack of books
+**LIFO** – Last In First Out principle
+
+##### Operations 
+* Push(item) Add an item at the top of the stack - O(1)
+* Pop()      Removes an item from the top - O(1)
+* Peek()     Returns the item of the top without removing it from the stack - O(1)
+* IsEmpty()  Tell us if the stack is empty of not - O(1)
+
+In stacks we don't have lookups because stack are not really mean for that.
+We don't use stack to store a list of clients, products, etc. 
+
+Stack can be used to resolve:
+* The reverse string algorithm
+* To verify if an expression is balanced (it contains all its open and closed parentesis, brackets, etc.)
+

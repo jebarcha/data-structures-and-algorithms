@@ -1,14 +1,13 @@
 ﻿using DataStructuresAndAlgorithms.MyArray;
-using DataStructuresAndAlgorithms.DataUtils;
 using System.Collections;
 using DataStructuresAndAlgorithms.Linked_List.DemoLL;
+using DataStructuresAndAlgorithms.Stacks;
 
+#region Arrays
 //DataStructuresAndAlgorithms.ArraysDemo1.ArraysExample();
 //ArrayDemo();
 //ArrayDynamicArray();
 
-//LinkedListDemo1();
-MyLinkedList();
 
 void ArrayDemo()
 {
@@ -55,6 +54,11 @@ void ArrayDynamicArray()
         Console.WriteLine(item);
     }
 }
+#endregion
+
+#region LinkedList
+//LinkedListDemo1();
+//MyLinkedList();
 
 void LinkedListDemo1()
 {
@@ -111,3 +115,25 @@ void MyLinkedList()
     Console.WriteLine(listWithLoop.HasLoop());
 
 }
+
+#endregion
+
+#region Stacks
+//CSharpStackDemo.Demo1();
+
+//var r = new StringReverser();
+//var result = r.Reverse(null);
+//Console.WriteLine(result);
+
+var b = new BalancedExpression();
+var expression = "((1 + 2))";
+// Edge cases
+// expression = "("
+// expression = "(()"
+// ( ]
+// expression = ") ("
+var result = b.IsBalanced(expression);
+Console.WriteLine(result);
+
+#endregion
+
