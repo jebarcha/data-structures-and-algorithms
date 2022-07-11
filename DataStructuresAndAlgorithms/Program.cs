@@ -125,15 +125,26 @@ void MyLinkedList()
 //var result = r.Reverse(null);
 //Console.WriteLine(result);
 
-var b = new BalancedExpression();
-var expression = "((1 + 2))";
-// Edge cases
-// expression = "("
-// expression = "(()"
-// ( ]
-// expression = ") ("
-var result = b.IsBalanced(expression);
-Console.WriteLine(result);
+//var b = new BalancedExpression();
+//var expression = "((1 + 2))";
+//// Edge cases
+//// expression = "("
+//// expression = "(()"
+//// ( ]
+//// expression = ") ("
+//var result = b.IsBalanced(expression);
+//Console.WriteLine(result);
+
+var stack = new DataStructuresAndAlgorithms.Stacks.Stack();
+Console.WriteLine(stack.IsEmpty());
+stack.Push(10);
+stack.Push(20);
+stack.Push(30);
+Console.WriteLine(stack);
+//stack.Pop();
+//Console.WriteLine(stack);
+//Console.WriteLine(stack.Peek());
+Console.WriteLine(stack.IsEmpty());
 
 #endregion
 
