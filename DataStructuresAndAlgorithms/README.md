@@ -70,3 +70,8 @@ Stack can be used to resolve:
 * The reverse string algorithm
 * To verify if an expression is balanced (it contains all its open and closed parentesis, brackets, etc.)
 
+#### Queues
+Queues are similar to stacks except that the first item inserted is the first one to be removed (FIFO)
+FIFO = First-In First-Out
+It like a line in the real world, people join the line from the back and leave from the front 
+

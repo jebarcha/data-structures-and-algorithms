@@ -2,6 +2,7 @@
 using System.Collections;
 using DataStructuresAndAlgorithms.Linked_List.DemoLL;
 using DataStructuresAndAlgorithms.Stacks;
+using DataStructuresAndAlgorithms.Queue;
 
 #region Arrays
 //DataStructuresAndAlgorithms.ArraysDemo1.ArraysExample();
@@ -121,10 +122,12 @@ void MyLinkedList()
 #region Stacks
 //CSharpStackDemo.Demo1();
 
+////Console.WriteLine("String Reverser");
 //var r = new StringReverser();
 //var result = r.Reverse(null);
 //Console.WriteLine(result);
 
+////Console.WriteLine("Balanced Expression");
 //var b = new BalancedExpression();
 //var expression = "((1 + 2))";
 //// Edge cases
@@ -135,16 +138,63 @@ void MyLinkedList()
 //var result = b.IsBalanced(expression);
 //Console.WriteLine(result);
 
-var stack = new DataStructuresAndAlgorithms.Stacks.Stack();
-Console.WriteLine(stack.IsEmpty());
-stack.Push(10);
-stack.Push(20);
-stack.Push(30);
-Console.WriteLine(stack);
-//stack.Pop();
+////Console.WriteLine("Stack");
+//var stack = new DataStructuresAndAlgorithms.Stacks.Stack();
+//Console.WriteLine(stack.IsEmpty());
+//stack.Push(10);
+//stack.Push(20);
+//stack.Push(30);
 //Console.WriteLine(stack);
-//Console.WriteLine(stack.Peek());
-Console.WriteLine(stack.IsEmpty());
+////stack.Pop();
+////Console.WriteLine(stack);
+////Console.WriteLine(stack.Peek());
+//Console.WriteLine(stack.IsEmpty());
+
+////two stacks
+//Console.WriteLine("Two Stacks");
+//var twoStacks = new TwoStacks(6);
+//Console.WriteLine(twoStacks.IsEmpty1());
+//Console.WriteLine(twoStacks.IsEmpty2());
+//twoStacks.Push1(10);
+//twoStacks.Push1(20);
+//twoStacks.Push1(30);
+//twoStacks.Push1(50);
+//Console.WriteLine(twoStacks.ToString());
+//Console.WriteLine(twoStacks.IsEmpty1());
+//Console.WriteLine(twoStacks.IsEmpty2());
+//twoStacks.Push2(5);
+//twoStacks.Push2(15);
+//Console.WriteLine(twoStacks.IsEmpty1());
+//Console.WriteLine(twoStacks.IsEmpty2());
+//Console.WriteLine(twoStacks.ToString());
+
+////min stack
+//Console.WriteLine("Min Stack");
+//var minStack = new MinStack();
+//Console.WriteLine(minStack.ToString());
+//minStack.Push(5);
+//minStack.Push(2);
+//minStack.Push(10);
+//minStack.Push(1);
+//Console.WriteLine(minStack.Min());
+//minStack.Pop();
+//Console.WriteLine(minStack.Min());
 
 #endregion
 
+
+#region Queues
+//Console.WriteLine("C# Queue demo");
+//CSharpQueueDemo.Demo();
+
+var q = new Queue<int>();
+q.Enqueue(10);
+q.Enqueue(20);
+q.Enqueue(30);
+CSharpQueueDemo.Reverse(q);
+
+
+
+
+
+#endregion
