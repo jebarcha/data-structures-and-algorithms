@@ -37,5 +37,38 @@ namespace DataStructuresAndAlgorithms.Queue
             }
             Console.WriteLine(DataStructuresAndAlgorithms.DataUtils.Utils.Array2String(queue.ToArray()));
         }
+
+        public static void ArrayQueueDemo()
+        {
+            var queue = new ArrayQueue(5);
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            //Console.WriteLine(queue.ToString());
+            var front = queue.Dequeue();
+            //Console.WriteLine(front);
+            //Console.WriteLine(queue.ToString());
+
+            front = queue.Dequeue();
+            //Console.WriteLine(front);
+            //Console.WriteLine(queue.ToString());
+
+            queue.Enqueue(40);
+            queue.Enqueue(50);
+            Console.WriteLine(queue.ToString());
+
+            queue.Enqueue(60);
+            Console.WriteLine(queue.ToString());
+
+            queue.Enqueue(70);
+            Console.WriteLine(queue.ToString());
+
+            queue.Dequeue();
+            Console.WriteLine(queue.ToString());
+
+            queue.Enqueue(80);
+            Console.WriteLine(queue.ToString());
+
+        }
     }
 }

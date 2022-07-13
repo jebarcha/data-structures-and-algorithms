@@ -187,11 +187,13 @@ void MyLinkedList()
 //Console.WriteLine("C# Queue demo");
 //CSharpQueueDemo.Demo();
 
-var q = new Queue<int>();
-q.Enqueue(10);
-q.Enqueue(20);
-q.Enqueue(30);
-CSharpQueueDemo.Reverse(q);
+//var q = new Queue<int>();
+//q.Enqueue(10);
+//q.Enqueue(20);
+//q.Enqueue(30);
+//CSharpQueueDemo.Reverse(q);
+
+CSharpQueueDemo.ArrayQueueDemo();
 
 
 
