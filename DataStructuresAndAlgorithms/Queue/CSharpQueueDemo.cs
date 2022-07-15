@@ -45,30 +45,35 @@ namespace DataStructuresAndAlgorithms.Queue
             queue.Enqueue(20);
             queue.Enqueue(30);
             //Console.WriteLine(queue.ToString());
-            var front = queue.Dequeue();
+            //var front = queue.Dequeue();
             //Console.WriteLine(front);
             //Console.WriteLine(queue.ToString());
 
-            front = queue.Dequeue();
-            //Console.WriteLine(front);
+            //front = queue.Dequeue();
+            ////Console.WriteLine(front);
             //Console.WriteLine(queue.ToString());
 
             queue.Enqueue(40);
             queue.Enqueue(50);
+            //Console.WriteLine(queue.ToString());
+
+            //queue.Enqueue(60);
+            //Console.WriteLine(queue.ToString());
+
+            //queue.Enqueue(70);
+            //Console.WriteLine(queue.ToString());
+
+            //queue.Dequeue();
+            //Console.WriteLine(queue.ToString());
+
+            //queue.Enqueue(80);
             Console.WriteLine(queue.ToString());
 
-            queue.Enqueue(60);
-            Console.WriteLine(queue.ToString());
+            Console.WriteLine($"Peek: {queue.Peek()}");
 
-            queue.Enqueue(70);
-            Console.WriteLine(queue.ToString());
+            Console.WriteLine($"IsEmpty: {queue.IsEmpty()}");
 
-            queue.Dequeue();
-            Console.WriteLine(queue.ToString());
-
-            queue.Enqueue(80);
-            Console.WriteLine(queue.ToString());
-
+            Console.WriteLine($"IsFull: {queue.IsFull()}" );
         }
     }
 }

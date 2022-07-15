@@ -75,3 +75,16 @@ Queues are similar to stacks except that the first item inserted is the first on
 FIFO = First-In First-Out
 It like a line in the real world, people join the line from the back and leave from the front 
 
+##### Circular Arrays analysis
+        // [60, 70, 30, 40, 50]
+        // -> means "is map to"
+        // 5  -> 0  Left % Length
+        // 6  -> 1
+        // 7  -> 2
+        // 8  -> 3
+        // 9  -> 4
+        // 10 -> 0
+        // 11 -> 1
+        // rear + 1 (will give us the number of the left side and then should map it to the number of the right side)
+        // (rear + 1) % length
+
