@@ -193,7 +193,9 @@ void MyLinkedList()
 //q.Enqueue(30);
 //CSharpQueueDemo.Reverse(q);
 
-CSharpQueueDemo.ArrayQueueDemo();
+//CSharpQueueDemo.ArrayQueueDemo();
+
+CSharpQueueDemo.QueueWith2StacksDemo();
 
 
 

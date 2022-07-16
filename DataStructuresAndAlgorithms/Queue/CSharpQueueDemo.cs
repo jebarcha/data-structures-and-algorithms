@@ -75,5 +75,21 @@ namespace DataStructuresAndAlgorithms.Queue
 
             Console.WriteLine($"IsFull: {queue.IsFull()}" );
         }
+
+        public static void QueueWith2StacksDemo()
+        {
+            QueueWithTwoStacks queue = new QueueWithTwoStacks();
+            Console.WriteLine(queue.IsEmpty());
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            queue.Dequeue();
+            var first = queue.Dequeue();
+            Console.WriteLine(first);
+            Console.WriteLine(queue.Peek());
+        }
+
     }
 }
+
+
