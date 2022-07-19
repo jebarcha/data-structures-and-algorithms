@@ -117,9 +117,27 @@ namespace DataStructuresAndAlgorithms.Queue
             }
 
         }
+        public static void LinkedListQueue()
+        {
+            var q = new LinkedListQueue();
+            q.Enqueue(10);
+            q.Enqueue(20);
+            q.Enqueue(30);
+            q.Enqueue(40);
+            q.Enqueue(50);
+            Console.WriteLine(q.ToString());
 
+            int dequeued = q.Dequeue();
+            Console.WriteLine(dequeued);
+            Console.WriteLine(q.ToString());
+
+            int resPeeked = q.Peek();
+            Console.WriteLine(resPeeked);
+            Console.WriteLine(q.ToString());
+        }
     }
 }
+
 
 
 

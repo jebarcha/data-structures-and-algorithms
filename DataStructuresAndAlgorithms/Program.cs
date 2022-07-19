@@ -199,7 +199,7 @@ void MyLinkedList()
 
 //CSharpQueueDemo.PriorityQueue();
 
-CSharpQueueDemo.MyPriorityQueue();
-
+//CSharpQueueDemo.MyPriorityQueue();
+CSharpQueueDemo.LinkedListQueue();
 
 #endregion
