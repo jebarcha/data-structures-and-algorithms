@@ -89,7 +89,37 @@ namespace DataStructuresAndAlgorithms.Queue
             Console.WriteLine(queue.Peek());
         }
 
+        public static void PriorityQueue()
+        {
+            PriorityQueue<int, int> p = new PriorityQueue<int, int>();
+            p.Enqueue(5, 5);
+            p.Enqueue(1, 1);
+            p.Enqueue(3, 3);
+            p.Enqueue(2, 2);
+            while (p.Count> 0)
+            {
+                Console.WriteLine(p.Dequeue());
+            }
+        }
+        public static void MyPriorityQueue()
+        {
+            var q = new MyPriorityQueue();
+            q.add(5);
+            q.add(3);
+            q.add(6);
+            q.add(1);
+            q.add(4);
+            Console.WriteLine(q.ToString());
+
+            while (!q.IsEmpty())
+            {
+                Console.WriteLine(q.Remove());
+            }
+
+        }
+
     }
 }
+
 
 
