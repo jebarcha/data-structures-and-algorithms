@@ -200,6 +200,8 @@ void MyLinkedList()
 //CSharpQueueDemo.PriorityQueue();
 
 //CSharpQueueDemo.MyPriorityQueue();
-CSharpQueueDemo.LinkedListQueue();
+//CSharpQueueDemo.LinkedListQueue();
+
+CSharpQueueDemo.StackWithTwoQueues();
 
 #endregion

@@ -135,6 +135,26 @@ namespace DataStructuresAndAlgorithms.Queue
             Console.WriteLine(resPeeked);
             Console.WriteLine(q.ToString());
         }
+
+        public static void StackWithTwoQueues()
+        {
+            var s = new StackWithTwoQueues();
+            s.Push(10);
+            s.Push(20);
+            s.Push(30);
+            Console.WriteLine(s.ToString());
+
+            var pop = s.Pop();
+            Console.WriteLine(pop);
+            Console.WriteLine(s.ToString());
+
+            var peek = s.Peek();
+            Console.WriteLine(peek);
+            Console.WriteLine(s.Size());
+            Console.WriteLine(s.ToString());
+
+
+        }
     }
 }
 
