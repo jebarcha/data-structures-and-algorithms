@@ -3,6 +3,7 @@ using System.Collections;
 using DataStructuresAndAlgorithms.Linked_List.DemoLL;
 using DataStructuresAndAlgorithms.Stacks;
 using DataStructuresAndAlgorithms.Queue;
+using DataStructuresAndAlgorithms.HashTables;
 
 #region Arrays
 //DataStructuresAndAlgorithms.ArraysDemo1.ArraysExample();
@@ -202,6 +203,15 @@ void MyLinkedList()
 //CSharpQueueDemo.MyPriorityQueue();
 //CSharpQueueDemo.LinkedListQueue();
 
-CSharpQueueDemo.StackWithTwoQueues();
+//CSharpQueueDemo.StackWithTwoQueues();
+
+#endregion
+
+#region #Hashtables
+
+Console.WriteLine("Hash Tables");
+
+//CSharpHashTableDemo.Demo();
+CSharpHashTableDemo.FindFirstNonRepeatingCharacter();
 
 #endregion
