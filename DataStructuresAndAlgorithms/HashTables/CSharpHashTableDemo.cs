@@ -111,6 +111,13 @@ namespace DataStructuresAndAlgorithms.HashTables
 
 
         }
+
+        public static void MostFrequentDemo()
+        {
+            var ht = new HashTableExercises();
+            int[] n = new int[] { 1, 2, 2, 3, 3, 3, 4 };
+            Console.WriteLine(ht.MostFrequent(n));
+        }
     }
 }
 

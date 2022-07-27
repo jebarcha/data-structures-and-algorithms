@@ -216,5 +216,8 @@ Console.WriteLine("Hash Tables");
 //CSharpHashTableDemo.SetsDemo(); 
 //CSharpHashTableDemo.FindFirstRepeatedCharecter();
 //CSharpHashTableDemo.HashFunctionsDemo();
-CSharpHashTableDemo.HashTableDemo();
+//CSharpHashTableDemo.HashTableDemo();
+
+CSharpHashTableDemo.MostFrequentDemo();
+
 #endregion
