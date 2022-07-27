@@ -212,6 +212,9 @@ void MyLinkedList()
 Console.WriteLine("Hash Tables");
 
 //CSharpHashTableDemo.Demo();
-CSharpHashTableDemo.FindFirstNonRepeatingCharacter();
-
+//CSharpHashTableDemo.FindFirstNonRepeatingCharacter();
+//CSharpHashTableDemo.SetsDemo(); 
+//CSharpHashTableDemo.FindFirstRepeatedCharecter();
+//CSharpHashTableDemo.HashFunctionsDemo();
+CSharpHashTableDemo.HashTableDemo();
 #endregion

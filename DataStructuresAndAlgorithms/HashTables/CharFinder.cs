@@ -40,5 +40,20 @@ namespace DataStructuresAndAlgorithms.HashTables
             return char.MinValue; // '0';
         }
 
+
+        public char FindFirstRepeatedChar(string str)
+        {
+            HashSet<char> set = new HashSet<char>();
+
+            foreach (var ch in str)
+            {
+                if (set.Contains(ch))
+                {
+                    return ch;
+                }
+                set.Add(ch);
+            }
+            return char.MinValue;
+        }
     }
 }

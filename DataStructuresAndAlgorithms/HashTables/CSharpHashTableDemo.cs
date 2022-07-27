@@ -49,10 +49,68 @@ namespace DataStructuresAndAlgorithms.HashTables
             var charFinder = new CharFinder();
             var result = charFinder.FindFistNonRepeatingChar("a green apple");
             Console.WriteLine(result);
-
         }
 
+        public static void SetsDemo()
+        {
+            HashSet<int> set = new HashSet<int>();
+            int[] numbers = { 1, 2, 3, 3, 2, 1, 4 };
+            foreach (var number in numbers)
+            {
+                set.Add(number);
+            }
+            foreach (var item in set)
+                Console.WriteLine(item);
+        }
 
+        public static void FindFirstRepeatedCharecter()
+        {
+            // green apple
+            var charFinder = new CharFinder();
+            var result = charFinder.FindFirstRepeatedChar("green apple");
+            Console.WriteLine(result);
+        }
+
+        public static void HashFunctionsDemo()
+        {
+            string str = "orange";
+            Console.WriteLine(str.GetHashCode()); //hashing
+
+            //Hashtable map = new Hashtable();
+            //map.Add(123456, "Jose");
+            //Console.WriteLine(Hash(123456));
+            //Console.WriteLine(HashString("123456-A"));
+        }
+        public static int Hash(int number)
+        {
+            return number % 100;  //assumming that 100 is the size if our internal array
+        }
+        public static int HashString(string key)
+        {
+            //string s = "";
+            //Console.WriteLine(s.GetHashCode());
+
+            int hash = 0;
+            foreach (var ch in key) 
+            {
+                hash += ch;
+            }
+            return hash % 100;
+        }
+
+        public static void HashTableDemo()
+        {
+            MyHashTable table = new MyHashTable();
+            table.Put(6, "A");  //1
+            table.Put(8, "B");  //3
+            table.Put(11, "C");
+            table.Put(6, "A+");
+            //Console.WriteLine(table.Get(6));
+            table.Remove(6);
+            Console.WriteLine(table.Get(10));
+
+
+        }
     }
 }
 
