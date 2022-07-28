@@ -220,7 +220,8 @@ Console.WriteLine("Hash Tables");
 
 //CSharpHashTableDemo.MostFrequentDemo();
 //CSharpHashTableDemo.CountPairsWithDiff();
-CSharpHashTableDemo.TwoSum();
+//CSharpHashTableDemo.TwoSum();
+CSharpHashTableDemo.MyHashMapDemo();
 #endregion
 
 

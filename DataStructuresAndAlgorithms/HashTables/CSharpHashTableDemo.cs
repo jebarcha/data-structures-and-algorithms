@@ -132,6 +132,18 @@ namespace DataStructuresAndAlgorithms.HashTables
             var result = ht.TwoSum(n, 9);
             Console.WriteLine(DataUtils.Utils.Array2String(result));
         }
+
+        public static void MyHashMapDemo()
+        {
+            var map = new MyHashMap();
+            map.Put(1, "A");
+            map.Put(2, "B");
+            map.Put(3, "C");
+            Console.WriteLine(map.Get(2));
+            map.Remove(3);
+            Console.WriteLine(map.Size());
+
+        }
     }
 }
 
