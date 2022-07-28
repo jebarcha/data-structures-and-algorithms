@@ -218,6 +218,8 @@ Console.WriteLine("Hash Tables");
 //CSharpHashTableDemo.HashFunctionsDemo();
 //CSharpHashTableDemo.HashTableDemo();
 
-CSharpHashTableDemo.MostFrequentDemo();
+//CSharpHashTableDemo.MostFrequentDemo();
+CSharpHashTableDemo.CountPairsWithDiff();
 
 #endregion
+
