@@ -124,6 +124,14 @@ namespace DataStructuresAndAlgorithms.HashTables
             int[] n = new int[] { 1, 7, 5, 9, 2, 12, 3 };
             Console.WriteLine(ht.CountPairsWithDiff(n, 2));
         }
+
+        public static void TwoSum()
+        {
+            var ht = new HashTableExercises();
+            int[] n = new int[] { 2, 7, 11, 15 };
+            var result = ht.TwoSum(n, 9);
+            Console.WriteLine(DataUtils.Utils.Array2String(result));
+        }
     }
 }
 

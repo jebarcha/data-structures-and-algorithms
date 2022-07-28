@@ -219,7 +219,8 @@ Console.WriteLine("Hash Tables");
 //CSharpHashTableDemo.HashTableDemo();
 
 //CSharpHashTableDemo.MostFrequentDemo();
-CSharpHashTableDemo.CountPairsWithDiff();
-
+//CSharpHashTableDemo.CountPairsWithDiff();
+CSharpHashTableDemo.TwoSum();
 #endregion
+
 
